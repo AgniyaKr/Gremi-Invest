@@ -1,0 +1,69 @@
+.about {
+  display: flex;
+
+  &__content {
+    padding-top: 60px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    max-width: 500px;
+    margin-right: 136px;
+    margin-bottom: 60px;
+    width: 100%;
+    font-size: $font-body;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+    color: $gray-500;
+    @extend %montserrat-400;
+  }
+
+  &__info {
+    margin-right: 70px;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about__item,
+  .about__ceo-name {
+    font-weight: 600;
+  }
+
+  &__info-statistic {
+    @extend %montserrat-600;
+    font-size: 44px;
+    line-height: 1.3;
+    color: $yellow-300;
+  }
+
+  &__ceo {
+    display: flex;
+  }
+
+  &__ceo-faunder {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  &__ceo-name {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+  }
+
+  &__ceo-proffesion {
+    font-size: 14px;
+  }
+
+  &__img {
+    width: 460px;
+    height: 585px;
+  }
+}
