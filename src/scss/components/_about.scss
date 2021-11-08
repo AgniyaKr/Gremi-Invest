@@ -21,26 +21,44 @@
     @extend %montserrat-400;
   }
 
-  &__info {
+  &__list {
+    display: flex;
+    justify-content: space-between;
     margin-right: 70px;
     margin-bottom: 60px;
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .about__item,
-  .about__ceo-name {
+  &__item,
+  &__ceo-name {
     font-weight: 600;
   }
 
-  &__info-statistic {
+  &__statistic {
     @extend %montserrat-600;
     font-size: 44px;
     line-height: 1.3;
     color: $yellow-300;
+  }
+
+  &__statistic--line {
+    position: relative;
+  }
+
+  &__statistic--line::after,
+  &__statistic--line::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    background-color: #E1E1E1;
+  }
+
+  &__statistic--line::after {
+    right: -45px;
+  }
+
+  &__statistic--line::before {
+    left: -45px;
   }
 
   &__ceo {
